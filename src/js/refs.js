@@ -1,7 +1,6 @@
-const refs = {
-    gallaryContainer: document.querySelector('.gallery'),
-    searchForm: document.querySelector('.search-form'),
-    loadMoreBtn: document.querySelector('.btn-primary')
-}
+const gallaryContainer = document.querySelector('.gallery');
+const searchForm = document.querySelector('.search-form');
 
-export default refs
+
+
+export {gallaryContainer, searchForm }
