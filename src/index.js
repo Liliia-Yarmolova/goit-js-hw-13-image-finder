@@ -4,36 +4,12 @@ import apiService from './js/apiService'
 import {gallaryContainer, searchForm } from './js/refs'
 import cardsMarkup from './js/update-cards-markup'
 import loadMoreBtn from './js/components/load-more-button'
-import * as basicLightbox from 'basiclightbox'
+// import * as basicLightbox from 'basiclightbox'
+import onClick from './js/show-large-card'
 
 
-// const instance = basicLightbox.create(
-//     `<img src="assets/images/image.png" width="800" height="600">`
-// galleryRef.addEventListener('click', onClick)
 
-
-// function onClick (event) {
-//     event.preventDefault()
-//     const imageRef = event.target
-
-//     if (imageRef.nodeName !== 'IMG') {
-//         return
-//     }
-    
-//     currentIndex = Number(event.target.dataset.index)
-//     const lagreImageURL = event.target.dataset.source
-//     const lagreImageAlt = event.target.alt
-//     const lagreImageIndex = event.target.dataset.index
-//     onModalOpen()
-
-//     // Подмена значения атрибута src элемента img.lightbox__image.
-//     largeImage.src = lagreImageURL
-//     largeImage.alt = lagreImageAlt
-//     largeImage.setAttribute('data-id', lagreImageIndex)
-//  }
-// )
-
-// instance.show()
+gallaryContainer.addEventListener('click', onClick)
 
 searchForm.addEventListener('submit', event => {
     event.preventDefault();
